@@ -1,0 +1,5 @@
+#!/bin/bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+export DYLD_LIBRARY_PATH="$DIR":/usr/local/lib:$DYLD_LIBRARY_PATH
+g++ -o "$DIR/statePropMultiMapsFullP" "$DIR/../cpp/statePropMultiMapsFullP.cpp" -I /usr/local/include/ -L"$DIR" -ldace -std=c++11
+"$DIR/statePropMultiMapsFullP"

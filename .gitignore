@@ -1,0 +1,41 @@
+# ===========================================================
+# Runtime I/O scratch files (written/read between MATLAB and
+# the C++ propagators on every run; no archival value)
+# ===========================================================
+runtime/*.dat
+runtime/*.mat
+
+# ===========================================================
+# Compiled C++ binaries (built from cpp/ by the run* scripts)
+# ===========================================================
+bin/stateProp
+bin/statePropMultiMaps
+bin/statePropMultiMapsFullP
+bin/statePropMultiMapsFullPRefine
+bin/statePropMultiMapsKep
+bin/statePropMultiMapsKepRefine
+bin/stateBackProp
+
+# ===========================================================
+# MATLAB generated files
+# ===========================================================
+*.asv
+
+# ===========================================================
+# macOS metadata
+# ===========================================================
+.DS_Store
+
+# ===========================================================
+# Workspace / lock artifacts
+# ===========================================================
+.vscode/
+.kkf*
+.!*
+# Ignore all output results except .gitkeep
+output/*
+!output/.gitkeep
+
+# Large input datasets kept local (too large for regular GitHub push)
+input/conjunctions.mat
+input/dataEllipse.mat
