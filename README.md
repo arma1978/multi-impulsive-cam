@@ -86,6 +86,12 @@ If your environment differs, update the `addpath(...)` line near the top of `mai
 
 `bin/run*` scripts compile with `g++` and link against DACE (`-ldace`).
 
+DACE upstream repository:
+
+- `https://github.com/dacelib/dace`
+
+Depending on your platform and setup, you may need to download and compile/install DACE locally before running the C++ propagators.
+
 Required dylibs are present in the repo root and in `bin/` for runtime loading on macOS.
 
 ## Data Conventions
