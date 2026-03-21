@@ -7,9 +7,6 @@ MATLAB + C++ toolkit for impulsive collision-avoidance manoeuvre design using di
 This project solves conjunction-avoidance problems with multiple formulations built on a shared propagation and geometry pipeline:
 
 - SCVX (sequential convex optimisation)
-- NLP (nonlinear programming)
-- MILP (mixed-integer linear programming)
-- Large-scale campaign analysis
 - Post-processing and plotting
 
 All calculations use km and s unless explicitly noted otherwise.
@@ -39,16 +36,8 @@ convexImpulsesOptimisation/
 | Script | Purpose |
 |---|---|
 | `main/mainSCVX.m` | Primary SCVX workflow |
-| `main/mainSCVXEllipse.m` | SCVX ellipse-target variant |
-| `main/mainNLP.m` | SOCP-initialised nonlinear optimisation |
-| `main/mainMILP.m` | MILP formulation |
-| `main/mainLargeSimSCVX.m` | Batch SCVX campaign over filtered test cases |
 | `main/mainPlot.m` | Single-case plotting |
-| `main/mainPlotLargeSim.m` | Large-campaign plotting |
 | `main/mainBoxPlot.m` | Statistical boxplots |
-| `main/mainKepJ2Compare.m` | Kepler vs J2 comparison |
-| `main/mainConvert2Data.m` | Result conversion utility |
-| `main/mainDataGeneration.m` | Dataset generation utility |
 
 ## Runtime Workflow
 
@@ -96,18 +85,12 @@ Required dylibs are present in the repo root and in `bin/` for runtime loading o
 Examples:
 
 - `input/data.mat`
-- `input/dataRev.mat`
-- `input/dataEllipse.mat`
-- `input/conjunctions.mat`
 - `input/conjunctions.txt`
 - `input/data.dat`
 
 ### Persistent Outputs (`output/`)
 
 - `output/ResultsSCVX/`
-- `output/ResultsNLP/`
-- `output/ResultsMILP/`
-- `output/ResultsLargeSimSCVX/`
 - `output/Figures/`
 
 ### Scratch Runtime Files (`runtime/`)
