@@ -23,8 +23,8 @@ convexImpulsesOptimisation/
 ├── cpp/             C++ propagator sources
 ├── bin/             Run scripts + compiled binaries
 ├── utils/           MATLAB utility functions (loadPoly, evalPoly, ...)
-├── input/           Curated input datasets
-├── output/          Saved results and figures
+├── input/           Versioned input datasets (lightweight)
+├── output/          Generated results/figures (ignored, except .gitkeep)
 ├── runtime/         Regenerated scratch files (MATLAB <-> C++)
 ├── libdace.2.dylib
 ├── libdace.2.0.1.dylib
@@ -80,18 +80,26 @@ Required dylibs are present in the repo root and in `bin/` for runtime loading o
 
 ## Data Conventions
 
-### Persistent Inputs (`input/`)
+### Versioned Inputs (`input/`)
 
-Examples:
+Currently tracked in this repository:
 
 - `input/data.mat`
+- `input/dataRev.mat`
 - `input/conjunctions.txt`
 - `input/data.dat`
 
-### Persistent Outputs (`output/`)
+Not tracked (kept local due size):
 
-- `output/ResultsSCVX/`
-- `output/Figures/`
+- `input/conjunctions.mat`
+- `input/dataEllipse.mat`
+
+### Generated Outputs (`output/`)
+
+Result folders are generated locally and ignored by Git.
+
+- Tracked placeholder: `output/.gitkeep`
+- Generated (not tracked): `output/Results*/`, `output/Figures/`
 
 ### Scratch Runtime Files (`runtime/`)
 
@@ -120,14 +128,14 @@ Run from repository root.
 ### MATLAB interactive
 
 ```matlab
-cd('/Users/rarm840/Dropbox/Work/CAM/convexImpulsesOptimisation')
+cd('<path-to-repo>/convexImpulsesOptimisation')
 run(fullfile('main','mainSCVX.m'))
 ```
 
 ### Terminal batch
 
 ```bash
-cd /Users/rarm840/Dropbox/Work/CAM/convexImpulsesOptimisation
+cd <path-to-repo>/convexImpulsesOptimisation
 /Applications/MATLAB_R2025b.app/bin/matlab -batch "run(fullfile('main','mainSCVX.m'))"
 ```
 
