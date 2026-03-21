@@ -33,11 +33,21 @@ convexImpulsesOptimisation/
 
 ## Main Entry Scripts
 
-| Script | Purpose |
-|---|---|
-| `main/mainSCVX.m` | Primary SCVX workflow |
-| `main/mainPlot.m` | Single-case plotting |
-| `main/mainBoxPlot.m` | Statistical boxplots |
+| Script | Purpose | Required Data | Availability |
+|---|---|---|---|
+| `main/mainSCVX.m` | Primary SCVX workflow for one case | `input/data.mat` | Included in repository |
+| `main/mainSCVXEllipse.m` | SCVX run with ellipse target constraints | `input/data.mat` (plus optional local `input/dataEllipse.mat` workflows) | `data.mat` included; `dataEllipse.mat` not tracked |
+| `main/mainNLP.m` | Nonlinear optimisation baseline | `input/data.mat` | Included in repository |
+| `main/mainMILP.m` | MILP formulation run | `input/conjunctions.mat` | Not tracked; contact authors |
+| `main/mainLargeSimSCVX.m` | Batch SCVX campaign over many conjunctions | `input/conjunctions.mat` | Not tracked; contact authors |
+| `main/mainDataGeneration.m` | Generate derived campaign dataset | `input/conjunctions.mat` | Not tracked; contact authors |
+| `main/mainConvert2Data.m` | Convert campaign outputs into `input/dataRev.mat` style dataset | `output/ResultsLargeSimSCVX/*.mat`, `input/data.mat` | Results are generated locally (not tracked); `data.mat` included |
+| `main/mainPlot.m` | Plot a single SCVX solution | `output/ResultsSCVX/sol*.mat` produced by `main/mainSCVX.m` | Generated locally (not tracked) |
+| `main/mainPlotLargeSim.m` | Plot campaign-level performance results | `output/ResultsLargeSimSCVX/*.mat` | Generated locally (not tracked) |
+| `main/mainBoxPlot.m` | Boxplot analysis for campaign outputs | `output/ResultsLargeSimSCVX/*.mat` | Generated locally (not tracked) |
+| `main/mainKepJ2Compare.m` | Compare Kepler/J2 campaign outputs | `output/ResultsLargeSimSCVX/*.mat` | Generated locally (not tracked) |
+
+Note: some workflows require datasets that are intentionally not versioned in this public repository (`input/conjunctions.mat`, `input/dataEllipse.mat`). If you need those files, contact the authors.
 
 ## Runtime Workflow
 
