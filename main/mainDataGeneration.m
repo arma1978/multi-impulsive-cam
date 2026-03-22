@@ -1,3 +1,9 @@
+% =========================================================================
+% mainDataGeneration.m
+% Build derived conjunction datasets from conjunctions.mat for campaign runs.
+% Requires local input/conjunctions.mat (not versioned in this repository).
+% =========================================================================
+
 clearvars; 
 close all; 
 clc

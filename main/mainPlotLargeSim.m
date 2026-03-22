@@ -1,3 +1,9 @@
+% =========================================================================
+% mainPlotLargeSim.m
+% Generate aggregate plots for large-simulation campaign results.
+% Requires generated MAT files in output/ResultsLargeSimSCVX/.
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

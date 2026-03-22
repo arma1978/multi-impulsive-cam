@@ -1,3 +1,9 @@
+% =========================================================================
+% mainNLP.m
+% Solve the nonlinear-programming baseline for one conjunction scenario.
+% Uses input/data.mat and generated runtime maps from the propagator.
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

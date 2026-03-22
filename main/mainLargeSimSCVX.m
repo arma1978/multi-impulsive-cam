@@ -1,3 +1,9 @@
+% =========================================================================
+% mainLargeSimSCVX.m
+% Run the SCVX pipeline over a large conjunction catalogue and save results.
+% Requires local input/conjunctions.mat (not versioned in this repository).
+% =========================================================================
+
 clearvars -except quickTestMaxCases; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

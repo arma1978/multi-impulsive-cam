@@ -1,3 +1,9 @@
+// =========================================================================
+// statePropMultiMapsFullPRefine.cpp
+// Refinement-stage variant of full-parameter multi-map DA propagation.
+// Re-centers around current iterate to update linear maps for SCVX refinement.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

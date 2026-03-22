@@ -1,3 +1,9 @@
+// =========================================================================
+// statePropMultiMaps.cpp
+// Multi-impulse DA propagation executable producing linearized map outputs.
+// Used by convex solvers to build constraints from runtime input scenarios.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

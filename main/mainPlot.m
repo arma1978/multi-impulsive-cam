@@ -1,3 +1,9 @@
+% =========================================================================
+% mainPlot.m
+% Plot a single SCVX solution (trajectory, delta-v profile, and B-plane view).
+% Requires a previously generated result MAT file in output/ResultsSCVX/.
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

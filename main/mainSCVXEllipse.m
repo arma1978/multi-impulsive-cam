@@ -1,3 +1,9 @@
+% =========================================================================
+% mainSCVXEllipse.m
+% Run SCVX with ellipse-target parameterization on the B-plane.
+% Uses input/data.mat and ellipse target construction utilities.
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

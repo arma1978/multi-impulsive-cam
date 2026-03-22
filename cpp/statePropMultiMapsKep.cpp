@@ -1,3 +1,9 @@
+// =========================================================================
+// statePropMultiMapsKep.cpp
+// Kepler-only multi-map propagation executable for campaign comparisons.
+// Generates runtime map outputs compatible with MATLAB optimization scripts.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

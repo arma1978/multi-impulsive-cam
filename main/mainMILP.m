@@ -1,3 +1,9 @@
+% =========================================================================
+% mainMILP.m
+% Solve the multi-impulse collision-avoidance problem using the MILP model.
+% Requires local input/conjunctions.mat (not versioned in this repository).
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

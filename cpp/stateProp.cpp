@@ -1,3 +1,9 @@
+// =========================================================================
+// stateProp.cpp
+// Single-step DA state propagation executable used by MATLAB workflows.
+// Propagates chief/deputy states with Kepler/J2 dynamics from runtime inputs.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

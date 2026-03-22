@@ -1,3 +1,9 @@
+// =========================================================================
+// statePropMultiMapsKepRefine.cpp
+// Refinement-stage Kepler multi-map propagation around current maneuver guess.
+// Used in iterative convex refinement loops.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

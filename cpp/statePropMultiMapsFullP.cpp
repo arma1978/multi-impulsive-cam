@@ -1,3 +1,9 @@
+// =========================================================================
+// statePropMultiMapsFullP.cpp
+// Multi-impulse DA propagation with full covariance parametrization (first pass).
+// Writes map data consumed by MATLAB convex optimization routines.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

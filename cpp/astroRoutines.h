@@ -1,3 +1,9 @@
+// =========================================================================
+// astroRoutines.h
+// Shared astrodynamics and frame-transformation helpers for DA propagators.
+// Included by all state propagation executables in cpp/.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

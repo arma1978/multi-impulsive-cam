@@ -1,3 +1,9 @@
+// =========================================================================
+// stateBackProp.cpp
+// Backward propagation utility from TCA to the initial epoch using DA maps.
+// Reads runtime inputs and writes propagated states/maps for MATLAB drivers.
+// =========================================================================
+
 #define _USE_MATH_DEFINES
 #define WITH_ALGEBRAICMATRIX
 

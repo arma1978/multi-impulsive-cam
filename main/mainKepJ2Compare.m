@@ -1,3 +1,9 @@
+% =========================================================================
+% mainKepJ2Compare.m
+% Compare campaign metrics obtained with Kepler and J2 propagators.
+% Reads generated result files under output/ResultsLargeSimSCVX/.
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);

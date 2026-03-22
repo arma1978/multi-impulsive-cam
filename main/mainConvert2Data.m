@@ -1,3 +1,9 @@
+% =========================================================================
+% mainConvert2Data.m
+% Convert large-simulation result sets into a compact data table format used
+% by other analysis scripts (e.g., dataRev-style post-processing inputs).
+% =========================================================================
+
 clearvars; close all; clc; format longG;
 set(0,'DefaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',16);
