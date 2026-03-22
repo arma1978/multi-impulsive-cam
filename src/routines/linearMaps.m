@@ -16,8 +16,7 @@ function param = linearMaps(DAx, param)
 % Inputs:
 %   DAx   - DA flow map cell array
 %   param - struct with ndv
-% Output:
-%   param - updated with A, M, Q, L, c, drrb2Nom, rrb2Nom
+% Outputs: %   param - updated with A, M, Q, L, c, drrb2Nom, rrb2Nom
 
 ndv    = param.ndv;
 DAMaps = reshape(DAx(1:ndv*6), 6, ndv);  % 6 x N

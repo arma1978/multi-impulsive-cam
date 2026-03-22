@@ -8,8 +8,7 @@ function savePlot(name, path, type, res)
 %     path - output directory (string)
 %     type - print driver string passed to print(), e.g. '-dpng'
 %     res  - resolution string, e.g. '-r300'
-%   Output:
-%     none (writes figure files to disk)
+% Outputs: %     none (writes figure files to disk)
 
 ax = gca; 
 ax.XTickMode = 'manual';

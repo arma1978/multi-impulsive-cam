@@ -8,8 +8,7 @@ function p = evalPoly(C, E, x)
 %     E - exponent matrix (K x n), one row of exponents per monomial
 %     x - evaluation points (N x n), each row is one point
 %
-%   Output:
-%     p - column vector of evaluated polynomial values (N x 1)
+% Outputs: %     p - column vector of evaluated polynomial values (N x 1)
 %
 %   The polynomial is evaluated as:
 %     p(i) = sum_k  C(k) * prod_j  x(i,j)^E(k,j)

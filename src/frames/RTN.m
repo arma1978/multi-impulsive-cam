@@ -1,10 +1,8 @@
 function toRTN = RTN(xx)
 % RTN  Compute RTN frame transforms along a trajectory.
 %
-% Input:
-%   xx - stacked states [6xN], rows: [r; v]
-% Output:
-%   toRTN - transforms [3x3xN], rows [R; T; N]
+% Inputs: %   xx - stacked states [6xN], rows: [r; v]
+% Outputs: %   toRTN - transforms [3x3xN], rows [R; T; N]
 
 rr = xx(1:3,:);
 vv = xx(4:6,:);

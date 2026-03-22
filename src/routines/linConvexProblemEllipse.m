@@ -1,11 +1,9 @@
 function prob = linConvexProblemEllipse(param, xxOnellipse)
 % linConvexProblemEllipse  Build SOCP with B-plane point fixed on ellipse grid.
 %
-% Input:
-%   param        - optimisation and linear-map data
+% Inputs: %   param        - optimisation and linear-map data
 %   xxOnellipse  - fixed B-plane target point [2x1]
-% Output:
-%   prob         - MOSEK problem structure
+% Outputs: %   prob         - MOSEK problem structure
 
 dvmax = param.dvMax;
 

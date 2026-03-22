@@ -6,8 +6,7 @@ function [out, xxOptLin, param] = linConvexSolve(param)
 %   until the optimised B-plane point converges.  Uses the DA maps already
 %   stored in param (computed once in mainSCVX before this call).
 %
-% Input:
-%   param    - parameter struct including linear maps, ellipse geometry,
+% Inputs: %   param    - parameter struct including linear maps, ellipse geometry,
 %              optimisation variable sizes, and dvMax
 % Outputs:
 %   out      - struct array (one entry per iteration) with B-plane points,

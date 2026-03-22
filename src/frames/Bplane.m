@@ -4,8 +4,7 @@ function toBplane = Bplane(vvs,vvd)
 % Inputs:
 %   vvs - spacecraft velocity at encounter [3x1]
 %   vvd - debris velocity at encounter     [3x1]
-% Output:
-%   toBplane - DCM-like transform [3x3] with rows [xi; eta; zeta]
+% Outputs: %   toBplane - DCM-like transform [3x3] with rows [xi; eta; zeta]
 
 relVel = vvs-vvd;
 eta = relVel/norm(relVel);

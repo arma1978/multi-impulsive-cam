@@ -13,8 +13,7 @@ function [ CollProb, varargout ] = PcAlfano( COV1, COV2, deltar, deltav, OBJ, va
 %   N          - optional number of integration terms
 %                (if omitted, selected automatically)
 %
-% Output:
-%   CollProb   - collision probability estimate
+% Outputs: %   CollProb   - collision probability estimate
 
 
 % Written by Alessandro Morselli, 24/10/2013

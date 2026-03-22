@@ -8,8 +8,7 @@ function E = pv2po(rr, vv, mu)
 %     vv  - velocity vector (3x1) [km/s or consistent unit]
 %     mu  - gravitational parameter [km^3/s^2 or consistent unit]
 %
-%   Output:
-%     E   - [a, e, i, Omega, omega, theta]
+% Outputs: %     E   - [a, e, i, Omega, omega, theta]
 %             a     - semi-major axis          [same unit as rr]
 %             e     - eccentricity             [-]
 %             i     - inclination              [rad]

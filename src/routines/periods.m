@@ -1,8 +1,16 @@
 function tanomal = periods(sma,ecc,inc,argper,j2,req,mu)
 % periods  Compute J2-perturbed anomalistic period.
 %
-% Inputs are classical elements and constants in consistent units.
-% Output tanomal is the period between perigee passages.
+% Inputs:
+%   sma    - semi-major axis
+%   ecc    - eccentricity
+%   inc    - inclination [rad]
+%   argper - argument of perigee [rad]
+%   j2     - second zonal harmonic coefficient
+%   req    - reference equatorial radius
+%   mu     - gravitational parameter
+% Outputs:
+%   tanomal - anomalistic period (time between perigee passages)
 
 pi2 = 2*pi;
 % Keplerian period

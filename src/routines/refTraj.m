@@ -10,8 +10,7 @@ function param = refTraj(DAx, param)
 % Inputs:
 %   DAx   - DA flow map cell array (from loadPoly)
 %   param - struct with field ndv
-% Output:
-%   param - updated with rrvvNoMan, rrvvsEncNoMan, rrvvdEncNoMan
+% Outputs: %   param - updated with rrvvNoMan, rrvvsEncNoMan, rrvvdEncNoMan
 
 ndv     = param.ndv;
 DAMaps  = reshape(DAx(1:ndv*6), 6, ndv);  % 6 x N DA maps along the manoeuvre window

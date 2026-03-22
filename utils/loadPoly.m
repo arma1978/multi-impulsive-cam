@@ -10,8 +10,7 @@ function DAx = loadPoly(fname, n, m, type)
 %     type  - 0: pure DA polynomials
 %             1: Taylor models (each polynomial also carries remainder bounds)
 %
-%   Output:
-%     DAx   - column array of structs of length (total_batches * m), each with:
+% Outputs: %     DAx   - column array of structs of length (total_batches * m), each with:
 %               .C    - coefficient column vector (one entry per monomial)
 %               .E    - exponent matrix (K x n, one row per monomial)
 %             additionally, when type == 1:

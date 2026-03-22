@@ -6,11 +6,9 @@ function param = ellipseTargets(param)
 %   - target squared-Mahalanobis threshold,
 %   - discretized ellipse points/normals used by convex solvers.
 %
-% Input:
-%   param - struct containing encounter states, RTN covariances, target Pc,
+% Inputs: %   param - struct containing encounter states, RTN covariances, target Pc,
 %           and discretization settings (disc, minDist, bodySize, ...)
-% Output:
-%   param - same struct enriched with ellipse geometry and risk metrics
+% Outputs: %   param - same struct enriched with ellipse geometry and risk metrics
 
 % param.rrvvsEncNoMan(1:3) = param.data{1,3:5}';
 % param.rrvvsEncNoMan(4:6) = param.data{1,6:8}';

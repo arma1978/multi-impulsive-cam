@@ -1,10 +1,8 @@
 function toFrenet = frenet(xx)
 % frenet  Compute TNB (Frenet-like) frame transforms along a trajectory.
 %
-% Input:
-%   xx - stacked states [6xN], rows: [r; v]
-% Output:
-%   toFrenet - transforms [3x3xN], rows [T; N; B]
+% Inputs: %   xx - stacked states [6xN], rows: [r; v]
+% Outputs: %   toFrenet - transforms [3x3xN], rows [T; N; B]
 
 rr = xx(1:3,:);
 vv = xx(4:6,:);

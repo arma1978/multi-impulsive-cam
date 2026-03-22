@@ -5,8 +5,7 @@ function [param, covsRTN, covdRTN] = selectTestCase(param)
 % It writes encounter states to disk, runs backward propagation, and writes
 % inputFullP.dat for the forward multi-impulse propagator.
 %
-% Input:
-%   param    - struct with fields: data, ind, mu, nOrbits, dt, maxImpNum,
+% Inputs: %   param    - struct with fields: data, ind, mu, nOrbits, dt, maxImpNum,
 %              order, projectRoot/runtimeDir (optional)
 % Outputs:
 %   param    - updated struct with selected test-case data and propagated states

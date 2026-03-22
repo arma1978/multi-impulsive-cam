@@ -8,7 +8,7 @@ function [param, covsRTN, covdRTN] = selectTestCaseFiltered(param)
 %   at the start of the manoeuvre window, and writes the full propagation
 %   input file (inputFullP.dat).
 %
-% Input:   param  - struct with fields: data, ind, prop, nOrbits, dt,
+% Inputs: param  - struct with fields: data, ind, prop, nOrbits, dt,
 %                   maxImpNum, order, bodySize, mu, J2, rE
 % Outputs: param    - updated struct (adds: t2TCA, PsRTN, PdRTN, coes, coed, Ts)
 %          covsRTN  - 3x3 chaser covariance in RTN frame  [km^2]
