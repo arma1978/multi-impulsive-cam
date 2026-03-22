@@ -4,6 +4,14 @@ function [param, covsRTN, covdRTN] = selectTestCase(param)
 % This variant is used by mainLargeSimSCVX/mainMILP on conjunctions.mat.
 % It writes encounter states to disk, runs backward propagation, and writes
 % inputFullP.dat for the forward multi-impulse propagator.
+%
+% Input:
+%   param    - struct with fields: data, ind, mu, nOrbits, dt, maxImpNum,
+%              order, projectRoot/runtimeDir (optional)
+% Outputs:
+%   param    - updated struct with selected test-case data and propagated states
+%   covsRTN  - spacecraft covariance in RTN at TCA [3x3]
+%   covdRTN  - debris covariance in RTN at TCA [3x3]
 
 km = 1000;
 if isfield(param,'projectRoot')

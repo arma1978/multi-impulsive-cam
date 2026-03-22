@@ -1,21 +1,21 @@
 function [ CollProb, varargout ] = PcAlfano( COV1, COV2, deltar, deltav, OBJ, varargin  )
-%PCALFANO Compute collision probability using Alfano approximation
-%   
-% COLLPROB = PCCHAN( COV1, COV2, DELTAR, DELTAV, OBJ )
+% PcAlfano  Compute collision probability using the Alfano approximation.
 %
-% Input: 
-%        COV1, covariance of target at TCA
-%        COV2, covariance of chaser at TCA
-%        DELTAR, relative distance vector at TCA
-%        DELTAV, relative distance vector at TCA
-%        OBJ, hard-body radius
-%        
-%        N, number of terms for approximation
-%        If not set minimum number of terms is automatically computed
+% Syntax:
+%   CollProb = PcAlfano(COV1, COV2, deltar, deltav, OBJ)
+%   CollProb = PcAlfano(COV1, COV2, deltar, deltav, OBJ, N)
+%
+% Inputs:
+%   COV1, COV2 - 6x6 state covariance matrices at TCA (position block used)
+%   deltar     - relative position vector at TCA [3x1]
+%   deltav     - relative velocity vector at TCA [3x1]
+%   OBJ        - combined hard-body radius
+%   N          - optional number of integration terms
+%                (if omitted, selected automatically)
 %
 % Output:
-%        COLLPROB, collision probability
-%        
+%   CollProb   - collision probability estimate
+
 
 % Written by Alessandro Morselli, 24/10/2013
 

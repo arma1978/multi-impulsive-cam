@@ -3,6 +3,13 @@ function [out,xxOptLin,param] = linConvexSolveEllipse(param)
 %
 % For each sampled ellipse point, solve one convex problem and store
 % delta-v and resulting B-plane state.
+%
+% Input:
+%   param    - optimisation struct with ellipse samples and solver settings
+% Outputs:
+%   out      - struct array with per-sample optimisation results
+%   xxOptLin - last optimisation decision vector (delta-v components)
+%   param    - returned unchanged for interface consistency
 
 for ind = 1:param.disc
     out(ind).xx2Bplane = param.xx2Target(:,ind);

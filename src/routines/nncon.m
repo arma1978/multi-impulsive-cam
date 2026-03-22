@@ -3,6 +3,14 @@ function [c,ceq,DC,DCeq] = nncon(xx,DAx,param)
 %
 % Inequalities: per-impulse norm constraints  ||dv_i|| <= dvMax
 % Equality:     squared-Mahalanobis target constraint at encounter
+%
+% Inputs:
+%   xx    - scaled optimisation vector [3*ndv x 1]
+%   DAx   - DA maps loaded from runtime files
+%   param - struct with scaling, bounds, reference trajectory, and maps
+% Outputs:
+%   c, ceq   - inequality and equality constraints for fmincon
+%   DC, DCeq - analytical Jacobians of c and ceq (scaled variables)
 
 xx = xx/param.dvScl;
 %% extract data from param structure

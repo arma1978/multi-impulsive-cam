@@ -4,6 +4,13 @@ function [f,A,b,Aeq,beq,intcon,uubLin,llbLin,param] = linProgProblem(param)
 % Decision vector:
 %   [dv_plus(3N); dv_minus(3N); z(1:disc-1)]
 % where z are binary selectors for tangent half-planes.
+%
+% Input:
+%   param   - struct containing linear maps, ellipse samples, dv bounds,
+%             and variable dimensions
+% Outputs:
+%   f,A,b,Aeq,beq,intcon,uubLin,llbLin - MILP matrices/vectors for intlinprog
+%   param   - returned unchanged for interface consistency
 
 M = 1e4;
 dum = [param.drrb2Nom -param.drrb2Nom];
